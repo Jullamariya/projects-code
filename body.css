@@ -1,0 +1,51 @@
+body{
+  font-family:Times New Roman;
+  margin:0;
+  box-sizing: border-box;
+  background-color: aquamarine;
+ 
+/* display:block;  */
+} 
+
+
+
+.category{
+  box-sizing:border-box;
+  width:80px;
+  height:80px;
+  display:flex;
+  margin:0px 16px;
+  background-color: white;
+}
+
+.image-scooty{
+  font-size:15px;
+  display:flex;
+  flex-direction:column;
+  color:black;
+  
+column-gap:10px ;
+row-gap:10px;
+margin:10px;
+width:80px;
+height:80px;
+} 
+.fashion-class{
+  display:flex;
+}
+.fashion-division{
+ display:flex;
+ flex-direction:column;
+}
+.down-arrow-button{
+  height:18px;
+  width:18px;
+  display:flex;
+  justify-content: center;
+ flex-direction:column;
+}
+
+/* @media(max-width:376){
+  .store,
+  .dots {display:none;}
+} */
