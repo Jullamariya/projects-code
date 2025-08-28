@@ -1,5 +1,7 @@
 .flip{
+  background-color: #2874f0;
   display: flex;
+  width:100%;
 }
 .header{
   display:flex;

@@ -1,21 +1,23 @@
 body{
   font-family:Times New Roman;
   margin:0;
+  padding:0px;
   box-sizing: border-box;
-  background-color: aquamarine;
+  background-color: rgb(229, 247, 247);
  
 /* display:block;  */
 } 
 
-
+.category-body{
+   margin-left: 16px;
+  margin-right:16px;
+}
 
 .category{
   box-sizing:border-box;
   width:80px;
   height:80px;
   display:flex;
-  margin:0px 16px;
-  background-color: white;
 }
 
 .image-scooty{
@@ -23,6 +25,7 @@ body{
   display:flex;
   flex-direction:column;
   color:black;
+
   
 column-gap:10px ;
 row-gap:10px;
@@ -45,6 +48,22 @@ height:80px;
  flex-direction:column;
 }
 
+.landscape-division{
+margin-top:60px;
+background:white;
+
+margin-bottom:12px;
+
+}
+.landscape-image{
+  display:block;
+  padding-bottom:10px;
+  padding-right:10px;
+}
+.size{
+  width:900px;
+  height:118px;
+}
 /* @media(max-width:376){
   .store,
   .dots {display:none;}
