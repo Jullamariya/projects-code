@@ -53,3 +53,14 @@ body{
   height:20px;
   margin-top:0;
 }
+.mobile-slide-division{
+   display:flex;
+   flex-direction:column;
+   width:281px;
+   height:190px;
+   margin-right:4px;
+   margin-left:4px;
+   margin-bottom:4px;
+   margin-top:1px;
+   background-color:rgba(255, 255, 255, 1.00);
+}
