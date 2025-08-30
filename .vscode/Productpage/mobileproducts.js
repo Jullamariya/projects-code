@@ -1,5 +1,16 @@
 
-const product=[{
+// export function getProductId(productId){
+//   let matchingProduct;
+//   product.forEach((product)=>{
+//     if(product.id === productId){
+//       matchingProduct = product;
+//     }
+//   });
+//   return matchingProduct();
+// }
+
+
+ export const product=[{
    id:"mobile1a2b3c4d-poductab-01a",
   image:"flipkartimage/mobileimages/mobile-product-01.webp",
   name:"POCO C71(Cool Blue,128GB)",

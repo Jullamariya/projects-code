@@ -231,11 +231,16 @@ header {
 
 .section-five {
   display: flex;
-  flex-direction: row;
+  /* flex-direction:column; */
   padding: 12px 0px;
   /* height:186px;*/
   width: 425px;
 }
+.section-five-one{
+  display:flex;
+  flex-direction:row;
+}
+
 .mobile-product-division {
   display: flex;
   margin-left: 6px;
@@ -256,7 +261,7 @@ header {
   padding: 0px 20px 0px 12px;
 }
 .sponsered{
-      color: rgba(184, 187, 191, 1.00);
+    color: rgba(184, 187, 191, 1.00);
     font-size: 12px;
     line-height: 18px;
     font-family: inter_regular;
@@ -357,6 +362,7 @@ header {
 }
 .warranty-division {
   display: flex;
+  flex-direction:column;
   margin-top: 6px;
 }
 .warranty-span {
@@ -574,3 +580,5 @@ header {
   margin-right:24px;
   margin-bottom:6px;
 }
+
+
