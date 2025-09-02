@@ -1,7 +1,11 @@
-body {
+html,body {
   margin: 0px;
   width: 425px;
+  height:auto;
   font-family: sans-serif;
+  overflow-x:hidden;
+  cursor:pointer;
+
 }
 header {
   /* display:flex; */
@@ -224,8 +228,10 @@ header {
   height: 189px;
   transition: filter 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
 .container-two {
   display: flex;
+  flex-direction:column;
   /* margin:0px 10px; */
 }
 
@@ -354,7 +360,7 @@ header {
   height: 17px;
   width: 39px;
   display: flex;
-  font-family: "semibold";
+  font-family:"semibold";
 }
 .exchange-span {
   width: 90px;
@@ -371,12 +377,15 @@ header {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-style:'normal';
 }
-.wishtlist-division {
-  display: block;
+.wishlist-division {
+  display:flex;
+  height:24px;
+  width:24px;
 }
 .wishlist-image {
-  height: 24px;
-  width: 24px;
+  display:flex;
+  height:24px;
+  width:24px;
   position: relative;
 }
 .variant-division {
@@ -545,7 +554,6 @@ header {
     margin-top:1px;
     margin-bottom:4px;
     margin-left:4px;
-   
 }
 .mobile-list-divisionthree{
   display:flex;
@@ -580,6 +588,5 @@ header {
   margin-right:24px;
   margin-bottom:6px;
 }
-
 
 
