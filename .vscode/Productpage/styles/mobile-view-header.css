@@ -235,12 +235,16 @@ header {
   /* margin:0px 10px; */
 }
 
-.section-five {
+#section {
   display: flex;
-  /* flex-direction:column; */
+  flex-direction:column;
   padding: 12px 0px;
   /* height:186px;*/
   width: 425px;
+}
+.section{
+  display: flex;
+  flex-direction:row;
 }
 .section-five-one{
   display:flex;

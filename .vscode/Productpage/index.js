@@ -1,8 +1,126 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const products = [
+  {
+    id: "1",
+    image: "flipkartimage/mobileimages/mobile-product-01.webp",
+    name: "POCO C71 (Cool Blue,128GB)",
+    rating: { stars: 4.2, count: 12108 },
+    discount: "30%",
+    pricecross: "9,999",
+    priceCents: 699900,
+  },
+  {
+    id: "2",
+    image: "flipkartimage/mobileimages/realmemobile-product02.jpeg",
+    name: "realme P4 Pro 5G (Birch wood,128GB)",
+    rating: { stars: 4.3, count: 204167 },
+    discount: "20%",
+    pricecross: "19,999",
+    priceCents: 1199900,
+  },
+  {
+    id: "3",
+    image: "flipkartimage/mobileimages/mobile-product-01.webp",
+    name: "Motorola g45 5G (Pantone Dahlia Purple,128GB)",
+    rating: { stars: 4.3, count: 430 },
+    discount: "11%",
+    pricecross: "15,999",
+    priceCents: 1849900,
+  },
+];
+
+const container = document.getElementById("section");
+
+products.forEach((product) => {
+  const div = document.createElement("div");
+  div.classList.add("section");
+
+  div.innerHTML = `
+    <div class="mobile-product-division">
+      <img class="mobile-product-image" src="${product.image}" />
+    </div>
+
+    <div class="left-section-product">
+      <div class="mobile-heading">
+        <span class="heading-span">${product.name}</span>
+      </div>
+
+      <div class="count">
+        <span class="span-count">(${product.rating.count})</span>
+        <img class="assured-image" src="flipkartimage/assuredlogo.png" />
+      </div>
+
+      <div class="green-arrow-division">
+        <img class="green-arrow-image" src="flipkartimage/greenarrowdown.svg" />
+        <span class="percent-span">${product.discount}</span>
+        <div class="amount-division">
+          <span class="amount-span">₹${product.pricecross}</span>
+          <span class="amounttwo-span">₹${(product.priceCents / 100).toLocaleString()}</span>
+        </div>
+      </div>  
+
+      <div class="warranty-division">
+        <span class="warranty-span">1 year warranty by ${product.name.split(" ")[0]}</span>
+      </div>  
+    </div>
+
+    <div class="wishlist-division">
+      <img class="wishlist-image js-wishlist-image" src="flipkartimage/whishlistheart.svg" />
+    </div>
+  `;
+
+  container.appendChild(div);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   //   const product=[
   //   {
-  //     id:"mobile1a2b3c4d-poductab-01a",
+  //     id:"1",
   //     image:"flipkartimage/mobileimages/mobile-product-01.webp",
   //     name:"POCO C71(Cool Blue,128GB)",
   //     rating:{
@@ -14,7 +132,7 @@
   //     priceCents:699900
   //   },
   //   {
-  //     id:"mobile1a2b3c4d-productab-02a",
+  //     id:"2",
   //     image:"flipkartimage/mobileimages/realmemobile-product02.jpeg",
   //     name:"realme P4 Pro 5G(Birch wood,128GB)",
   //     rating:{
@@ -26,7 +144,7 @@
   //     priceCents:1199900
   //   },
   //   {
-  //     id:"mobile1a2b3c4d-productad-03a",
+  //     id:"3",
   //     image:"flipkartimage/mobileimages/mobile-product-01.webp",
   //     name:"Motorola g45 5G(Pantone Dahlia Purple,128GB)",
   //     rating:{
@@ -39,24 +157,28 @@
   //   }
   //   ]
 
-  // let productHTML = "";
 
-  // products.forEach((product) => {
-  //   productHTML =
-  //     productHTML +
+
+  // let productHTML = "";
+   
+  // const container= document.getElementById('section-five');
+
+  // product.forEach((product) => {
+  //   const containertwo = document.createElement('div')
+  //   containertwo.innerHTML =
   //     `    
   //                <div class="section-five">
 
-  //             <div class="mobile-product-division">
+  //              <div class="mobile-product-division">
   //               <img
   //                 class="mobile-product-image"
-  //                 src="${product.image}"
+  //                 src="flipkartimage/mobileimages/mobileimage.jpeg"
   //               />
   //             </div>
 
   //           <div class="left-section-product">
   //             <div class="mobile-heading">
-  //               <span class="heading-span">realme P4 5G(Steal Grey,256 GB)</span>
+  //               <span class="heading-span">${product.name}</span>
   //             </div>
 
   //             <div class="count">
@@ -103,9 +225,9 @@
 
   //               <div class="warranty-division">
   //                 <span class="warranty-span">1 year warranty by POCO </span>
-  //               </div> 
+  //               </div>  
 
-  //           </div>
+  //            </div>
   //            <div class="wishlist-division ">
   //             <img class="wishlist-image js-wishlist-image"
   //               src="flipkartimage/whishlistheart.svg"
@@ -113,7 +235,7 @@
   //          </div>
            
 
-  //       </div> 
+  //     </div> 
 
 
 
@@ -122,8 +244,8 @@
   //        </div>  
 
 
-  //       <!-- <div class="container-two"> -->
-
+  //        <div class="container-two"> 
+ 
   //         <div class="section-five">
 
   //             <div class="mobile-product-division">
@@ -192,7 +314,7 @@
   //         </div>   
 
 
-  //     </div> 
+  //     </div>  
 
   //       <div class="next-page-section">
   //         <div class="sixram-mobile-division text-ram-width">
@@ -243,11 +365,53 @@
 
   //        <div class="variant-division">
   //         <span class="variant-span">View All Variants</span>
-  //       </div> 
+  //       </div>  
+  //     `;
+  //       container.appendChild(containertwo)
 
-  //   `;
   // });
 
-  // document.querySelector(".js-display-image").innerHTML = productHTML;
 
+// document.querySelector('.js-display-image').innerHTML = productHTML;
 
+// ***************************************************
+
+// let isClicked = false;
+
+// function showImage() {
+//   const container = document.querySelector('.js-category-image');
+//   container.innerHTML = ""; // clear previous items
+
+//   if (!isClicked) {
+//     // Array of products
+//     const products = [
+//       {
+//         image: "flipkartimage/mobileimages/mobile-product-01.webp",
+//         name: "POCO C71 (Cool Blue, 128GB)",
+//       },
+//       {
+//         image: "flipkartimage/mobileimages/mobile-product-01.webp",
+//         name: "Realme P4 Pro 5G",
+//       },
+//       {
+//         image: "flipkartimage/mobileimages/mobile-product-01.webp",
+//         name: "Motorola g45 5G",
+//       }
+//     ];
+
+//     // Display images + names
+//     products.forEach(product => {
+//       container.innerHTML += `
+//         <div class="product-card">
+//           <img src="${product.image}" alt="${product.name}" width="120">
+//           <p>${product.name}</p>
+//         </div>
+//       `;
+//     });
+
+//     isClicked = true; // next time else will run
+//   } else {
+//     alert('Please, click again');
+//     isClicked = false; // reset so it works again
+//   }
+// }

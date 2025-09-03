@@ -1,0 +1,20 @@
+
+{
+  "fruits":[
+    {"fruit":"Apple"},
+    {"fruit":"Banana"},
+    {"fruit":"Orange"}
+  ],
+  "vegetables":[
+    {"vegetable":"tomoto"},
+    {"vegetable":"ladies finger"},
+    {"vegetable":"potato"}
+  ],
+  "foods":[
+    {"food":"Biriyani"},
+    {"food":"Chappathi"},
+    {"food":"Poratta"}
+  ]
+}
+
+

@@ -207,3 +207,34 @@
   color: rgba(42, 85, 229, 1);
   margin: 16px;
 }
+
+
+/* ********************************************* */
+
+body{
+  padding:16px;
+  background-color:#dfe6e9;
+  font-family:sans-serif;
+}
+.read-more-container{
+  display:flex;
+  flex-direction:column;
+  color:#111;
+  gap: 16px;
+}
+.conatiner{
+  padding:32px;
+  background-attachment:#fff;
+  border-radius:2px;
+  line-height:6px;
+  box-shadow: 0 0 16px rgba(0,0,0,.1);
+}
+.read-more-btn{
+  color:#0984e3;
+}
+.read-more-text{
+  display:none;
+}
+.read-more-text--show{
+   display:inline;
+}
