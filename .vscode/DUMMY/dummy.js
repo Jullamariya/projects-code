@@ -53,6 +53,7 @@
 // }
 // fruitsName();
 
+//*************************************************** */
 
 function fruitsName(){
   fetch("./fruits.json")
@@ -89,11 +90,36 @@ function fruitsName(){
 }
 fruitsName();
 
+//**************************************************** 
 
-function username(){
+function userName(){
   fetch("./dummy.json")
   .then(response => response.json())
-  .then(data=>{
-    
+  .then(data => {
+    const UsersContainer = document.getElementById("username");
+
+    data.username.forEach(item =>{
+      const div = document.createElement("div");
+      div.classList.add("names");
+      div.innerHTML = `<div>${item.name}</div>`
+      UsersContainer.appendChild(div);
+    });
+    data.username.forEach(item =>{
+      const div = document.createElement("div");
+      div.classList.add("names");
+      div.innerHTML = `<div>${item.age}</div>`
+      UsersContainer.appendChild(div);
+    });
+    data.username.forEach(item =>{
+      const div = document.createElement("div");
+      div.classList.add("names");
+      div.innerHTML = `<div>${item.place}</div>`
+      UsersContainer.appendChild(div);
+    });
   })
+  .catch(error => console.error("Error loading JSON",error));
 }
+userName();
+
+//********************************************************
+

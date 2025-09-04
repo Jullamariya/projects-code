@@ -1,0 +1,19 @@
+
+{
+  "alphabets":[{
+     "alphabetone":"a",
+     "alphabettwo":"b",
+     "alphabetthree":"c"
+  }],
+  "places":[{
+     "placeone":"england",
+     "placetwo":"polland",
+     "placethree":"america"
+  }],
+  "language":[{
+    "languageone":"English",
+    "languagetwo":"Malayalam",
+    "languagethree":"Physics"
+  }]
+}
+

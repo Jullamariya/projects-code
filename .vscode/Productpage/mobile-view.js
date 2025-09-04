@@ -1,27 +1,6 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//CREATING HTML USING JAVASCRIPT.
 
 const products = [
   {
@@ -97,25 +76,7 @@ products.forEach((product) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//**************************************************** 
 
 
   //   const product=[
@@ -415,3 +376,221 @@ products.forEach((product) => {
 //     isClicked = false; // reset so it works again
 //   }
 // }
+
+//****************************************************
+
+//CREATING HTML USING JSON
+
+function productfunction(){
+  fetch("./mobile-view.json")
+  .then(response => response.json())
+  .then(data =>{
+    const productContainer = document.getElementById("section");
+    data.products.forEach(item=>{
+      const div = document.createElement("div");
+      div.classList.add("product-division")
+      div.innerHTML = `
+      <div class="section-five">
+
+                <div class="mobile-product-division">
+                 <img
+                   class="mobile-product-image"
+                   src="flipkartimage/mobileimages/mobileimage.jpeg"
+                 />
+               </div>
+
+             <div class="left-section-product">
+               <div class="mobile-heading">
+               <span class="heading-span">${product.name}</span>
+               </div>
+
+               <div class="count">
+                 <span class="span-count">(183)</span>
+                     <img class="assured-image" src="flipkartimage/assuredlogo.png" />
+               </div>
+
+               <div class="green-arrow-division">
+                   <img
+                     class="green-arrow-image"
+                     src="flipkartimage/greenarrowdown.svg"
+                   />
+                    <span class="percent-span">30%</span>
+
+                   <div class="amount-division">
+                     <span class="amount-span">$9,999</span>
+                     <span class="amounttwo-span">$6,999</span>
+                   </div>
+               </div>  
+
+               <div class="product-division-four">
+
+                 <div class="image-division">
+                   <img class="image-wow-logo" src="flipkartimage/wow-image.png" />
+                 </div>
+
+                 <div class="offer-division">
+                   <span class="bank-offer-text">$6,649 with Bank offer</span>
+                 </div>
+               </div>
+
+                 <div class="exchange-division">
+                   <span class="upto-span">
+                     Upto 
+                   </span>
+                     <span class="upto-price-span">
+                       $5,200 
+                     </span>
+                   <span class="exchange-span">
+                      Off on Exchange
+                   </span>
+                 </div>
+                
+
+                 <div class="warranty-division">
+                   <span class="warranty-span">1 year warranty by POCO </span>
+                 </div>  
+
+              </div>
+              <div class="wishlist-division ">
+               <img class="wishlist-image js-wishlist-image"
+                 src="flipkartimage/whishlistheart.svg"
+               />
+            </div>
+           
+
+       </div> 
+
+
+
+         <div class="variant-division">
+           <span class="variant-span">View All Variants</span>
+          </div>  
+
+
+         <div class="container-two"> 
+           <div class="section-five">
+
+               <div class="mobile-product-division">
+                 <img
+                   class="mobile-product-image"
+                   src="flipkartimage/mobileimages/realmemobile-product02.jpeg"
+                 />
+               </div>
+
+             <div class="left-section-product">
+               <div class="sponsered">Sponsered</div>
+               <div class="mobile-heading">
+                 <span class="heading-span">realme P4 5G(Steal Grey,256 GB)</span>
+             </div>
+              <div class="count">
+                 <span class="span-count">(183)</span>
+                     <img class="assured-image" src="flipkartimage/assuredlogo.png" />
+               </div>
+
+               <div class="green-arrow-division">
+                   <img
+                     class="green-arrow-image"
+                     src="flipkartimage/greenarrowdown.svg"
+                   />
+                    <span class="percent-span">30%</span>
+
+                   <div class="amount-division">
+                     <span class="amount-span">$9,999</span>
+                     <span class="amounttwo-span">$6,999</span>
+                   </div>
+               </div>  
+
+               <div class="product-division-four">
+
+                 <div class="image-division">
+                   <img class="image-wow-logo" src="flipkartimage/wow-image.png" />
+                 </div>
+
+                 <div class="offer-division">
+                  <span class="bank-offer-text">$6,649 with Bank offer</span>
+                 </div>
+               </div>
+
+                 <div class="exchange-division">
+                   <span class="upto-span">
+                     Upto 
+                   </span>
+                     <span class="upto-price-span">
+                       $5,200 
+                     </span>
+                   <span class="exchange-span">
+                      Off on Exchange
+                   </span>
+                 </div>
+                
+               <div class="warranty-division">
+                   <span class="warranty-span">1 year warranty by POCO </span>
+                 </div>
+             </div>
+             <div class="wishlist-division">
+               <img class="wishlist-image"
+                   src="flipkartimage/whishlistheart.svg"
+                 />
+             </div>
+           </div>   
+
+
+       </div>  
+
+         <div class="next-page-section">
+           <div class="sixram-mobile-division text-ram-width">
+             <div class="text-list-mobile">
+               <div class="text-list-mobile-division js-text-list-mobile-division " 
+                  onclick="showImage()">
+                  6 GB RAM | 128 GB Storage
+               </div>
+             </div>
+           </div>
+             <div class="js-category-image"></div>
+           <div class="list-mobile">
+             <div class="sixram-mobile-division">
+               <div class="text-list-mobile">
+                 <div class="text-list-mobile-division">
+                  16.94 cm (6.67 Inch) Full HD+ Display
+                </div>
+              </div>
+           </div>
+
+           <div class="sixram-mobile-division">
+             <div class="text-list-mobile">
+                   <div class="text-list-mobile-division">
+                       5110 mAh
+                   </div>
+               </div>
+             </div>
+           </div>
+         
+           <div class="list-mobile">
+             <div class="sixram-mobile-division">
+               <div class="text-list-mobile">
+                  <div class="text-list-mobile-division">
+                       50MP + 8MP + 2MP
+                   </div>
+               </div>
+             </div>
+
+             <div class="sixram-mobile-division">
+               <div class="text-list-mobile">
+                 <div class="text-list-mobile-division">
+                       20MP Front Camera
+                   </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+          <div class="variant-division">
+          <span class="variant-span">View All Variants</span>
+        </div> 
+      `
+        })
+    
+  })
+}
+
+

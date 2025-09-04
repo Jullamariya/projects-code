@@ -1,0 +1,12 @@
+
+{
+  "color-one": [
+    { "color": "red" }
+  ],
+  "color-two": [
+    { "color": "Blue" }
+  ],
+  "color-three": [
+    { "color": "black" }
+  ]
+}

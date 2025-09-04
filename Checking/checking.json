@@ -1,0 +1,25 @@
+{
+  "products":[{
+    "id":"1",
+    "name":"POCO C71(Cool Blue,128GB",
+    "rating":{
+      "stars":"4.2",
+      "count":"12180"
+    },
+    "discount":"30%",
+     "pricecross":"9,999",
+     "priceCents":"6,999"
+  },
+  {"id":"2",
+   "name":"realme P4 Pro 5G (Birch wood,128GB)",
+   "rating":{
+    "stars":"4.3",
+    "count":"204167"
+  },
+   "discount":"20%",
+   "pricecross":"19,999",
+   "priceCents":"11,999"
+  }
+]}
+
+

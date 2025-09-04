@@ -1,0 +1,39 @@
+{
+  "products":[{
+      "id":"1",
+      "image":"flipkartimage/mobileimages/mobile-product-01.webp",
+      "name":"POCO C71 (Cool Blue, 128GB)",
+      "rating":{
+        "stars":"4.2",
+        "count":"12108"
+      },
+      "discount":"30%",
+      "priceCross":"9,999",
+      "priceCents":"6,999"
+  },
+  {
+       "id":"2",
+       "image":"flipkartimage/mobileimages/realmemobile-product02.jpeg",     
+       "name":"realme P4 Pro 5G (Birch wood,128GB)",
+       "rating":{
+         "stars":"4.3",
+         "count":"204167"
+       },
+       "discount":"20%",
+       "priceCross":"19,999",
+       "priceCents":"11,999"
+  },
+  {
+      "id":"3",
+      "image":"flipkartimage/mobileimages/              mobile-product-01.webp",
+      "name":"Motorola g45 5G (Pantone Dahlia Purple,128GB)",
+      "rating":{
+        "stars":"4.3",
+        "count":"430"
+      },
+      "discount":"11%",
+      "priceCross":"15,999",
+      "priceCents":"18,499"
+  }
+]
+}

@@ -1,0 +1,23 @@
+
+{
+  "cartproduct": [
+    {
+      "name": "T-Shirt",
+      "price": "$4",
+      "deliveryDate": "05-09-2025",
+      "ShippingAmount": "$1"
+    },
+    {
+      "name": "Cotton Socks",
+      "price": "$5",
+      "deliveryDate": "13-09-2025",
+      "ShippingAmount": "$2"
+    },
+    {
+      "name": "Basketball",
+      "price": "$9",
+      "deliveryDate": "12-12-2025",
+      "ShippingAmount": "$1"
+    }
+  ]
+}

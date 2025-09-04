@@ -270,26 +270,75 @@
 
 // ****************************************************
 
-  const parentContainer = document.querySelectorAll('.read-more-container');
+//   const parentContainer = document.querySelectorAll('.read-more-container');
 
-parentContainer.forEach(container => {
-  container.addEventListener('click', event => {
-    const current = event.target;
+// parentContainer.forEach(container => {
+//   container.addEventListener('click', event => {
+//     const current = event.target;
 
-    // check if clicked element is the button
-    const isReadMoreBtn = current.classList.contains('read-more-button');
-    if (!isReadMoreBtn) return;
+//     // check if clicked element is the button
+//     const isReadMoreBtn = current.classList.contains('read-more-button');
+//     if (!isReadMoreBtn) return;
 
-    const currentText = current.parentNode.querySelector('.read-more-text');
+//     const currentText = current.parentNode.querySelector('.read-more-text');
 
-    // toggle hidden text
-    currentText.classList.toggle('read-more-text--show');
+//     // toggle hidden text
+//     currentText.classList.toggle('read-more-text--show');
 
-    // change button text
-    current.textContent = current.textContent.includes('Read More')
-      ? "Read Less..."
-      : "Read More...";
-  });
-});
+//     // change button text
+//     current.textContent = current.textContent.includes('Read More')
+//       ? "Read Less..."
+//       : "Read More...";
+//   });
+// });
 
-const parentContainer = document.querySelector
+// const parentContainer = document.querySelector
+
+
+
+
+//*************************************** */
+
+function productsfunction(){
+  fetch("./checking.json")
+  .then(response => response.json())
+  .then(data =>{
+    const productContainer = document.getElementById("section-five");
+    data.products.forEach(item =>{
+      const div = document.createElement("div")
+      div.classList.add("section");
+      div.innerHTML =`
+        <div class="mobile-product-division">
+        <img class="mobile-product-image" src="flipkartimage/mobileimages/mobile-product-01.webp" />
+      </div>
+
+      <div class="left-section-product">
+        <div class="mobile-heading">
+          <span class="heading-span">${item.name}</span>
+        </div>
+
+        <div class="count">
+          <span class="span-count">(${item.rating.count})</span>
+          <img class="assured-image" src="flipkartimage/assuredlogo.png" />
+        </div>
+
+        <div class="green-arrow-division">
+          <img class="green-arrow-image" src="flipkartimage/greenarrowdown.svg" />
+          <span class="percent-span">${item.discount}</span>
+          <div class="amount-division">
+            <span class="amount-span">₹${item.pricecross}</span>
+            <span class="amounttwo-span">₹${item.priceCents}</span>
+          </div>
+        </div>  
+
+        <div class="warranty-division">
+          <span class="warranty-span">1 year warranty by ${item.name.split(" ")[0]}</span>
+        </div>  
+    </div>`;
+        productContainer.appendChild(div);
+    });
+  })
+  .catch(error => console.error("Error loading JSON",error));
+}
+productsfunction();
+

@@ -12,6 +12,6 @@ if(!cart){
   {
     productId:"",
     quantity:1,
-    delivveryOptionId:'2'
+    deliveryOptionId:'2'
   }]
 }
