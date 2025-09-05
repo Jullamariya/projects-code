@@ -237,7 +237,7 @@ header {
 
 #section {
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   padding: 12px 0px;
   /* height:186px;*/
   width: 425px;
@@ -246,7 +246,7 @@ header {
   display: flex;
   flex-direction:row;
 }
-.section-five-one{
+.section-five{
   display:flex;
   flex-direction:row;
 }
