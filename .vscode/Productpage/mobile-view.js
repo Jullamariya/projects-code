@@ -116,7 +116,7 @@ function productfunction() {
         </div>
           <p class="js-frontcamera-pixel"><p>
         `;
-
+//making drop down list using eventlisteners
        
         const ramDiv = div.querySelector(".js-text-list-mobile-division");
 const storageDisplay = div.querySelector(".js-storage-display");
@@ -203,4 +203,7 @@ function showImage(container){
     isClicked = false;
   }
 }
+
+*/
+
 
