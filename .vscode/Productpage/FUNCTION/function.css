@@ -1,0 +1,38 @@
+
+.next-page-section {
+  display: flex;
+  flex-direction: column;
+  width:425px;
+  height:108px;
+  padding-right:8px;
+  padding-left:8px;
+
+
+}
+.list-mobile{
+  display:flex;
+  flex-direction:row;
+}
+.sixram-mobile-division{
+  display:flex;
+  flex-direction:column;
+  height:28px;
+  margin-right:4px;
+  margin-left:4px;
+  margin-bottom:8px;
+  justify-content:center;
+  border:1px solid rgb(113, 116, 120,0.5);
+  border-radius:2px;
+}
+.text-list-mobile{
+  font-size:12px;
+  line-height:18px;
+  padding-left:8px;
+  padding-right:8px;
+  padding-top:4px;
+  padding-bottom:4px;
+  align-items:center;
+}
+.text-ram-width{
+  width:172px;
+}

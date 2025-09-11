@@ -118,6 +118,9 @@ function productfunction() {
         `;
 //making drop down list using eventlisteners
        
+
+
+
         const ramDiv = div.querySelector(".js-text-list-mobile-division");
 const storageDisplay = div.querySelector(".js-storage-display");
 
