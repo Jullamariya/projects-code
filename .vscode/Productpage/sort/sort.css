@@ -143,3 +143,23 @@ body {
 .bottom-sheet ul li:hover { 
   background: #f2f2f2;
 } */
+
+
+
+
+
+/* .bottom-sheet ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-sheet ul li {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.bottom-sheet ul li:hover { 
+  background: #f2f2f2;
+} */
