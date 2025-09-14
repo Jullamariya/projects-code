@@ -3,10 +3,3 @@ function toggleList() {
 }
 
 
-
-
-function toggleList() {
-  document.getElementById("bottomSheet").classList.toggle("active");
-}
-
-
