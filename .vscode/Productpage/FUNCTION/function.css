@@ -1,4 +1,4 @@
-
+/*
 .next-page-section {
   display: flex;
   flex-direction: column;
@@ -36,3 +36,47 @@
 .text-ram-width{
   width:172px;
 }
+
+
+*/
+
+
+    button {
+      margin: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Bottom list (hidden initially) */
+    .bottom-list {
+      position: fixed;
+      left: 0;
+      bottom: -300px; /* keep it hidden below screen */
+      width: 100%;
+      background: #fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+      transition: bottom 0.4s ease-in-out;
+      padding: 20px;
+    }
+
+    .bottom-list.show {
+      bottom: 0; /* slide into view */
+    }
+
+    .bottom-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bottom-list li {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .bottom-list li:last-child {
+      border-bottom: none;
+    }

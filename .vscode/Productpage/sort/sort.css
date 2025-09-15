@@ -3,6 +3,16 @@
   padding:0px;
   background-color: beige;
 }
+.sort-toggler{
+  position:fixed;
+  bottom:0px;
+  display:none;
+  padding: 0;
+  margin: 0;
+}
+.sort-toggler.bottom-list.show{
+  display:block;
+}
 .sort-division-one{
   display:flex;
   flex-direction:column;
@@ -24,6 +34,7 @@
 .sort-division-section{
   width:425px;
 }
+  
 .sort-division-four{
   display:flex;
   flex-direction:row;
@@ -97,69 +108,66 @@
 
 .custom-radio:hover .radio-btn {
   border-color: blue;
-  background-color: blue;
+  /* background-color: blue; */
   cursor: pointer;
-} 
+}
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7 */
-/* 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-/* Bottom sheet container 
-.bottom-sheet {
+    button {
+      margin: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .bottom-list {
+      position: fixed;
+      left: 0;
+      bottom: -300px; 
+      width: 100%;
+      background: #fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+      transition: bottom 0.4s ease-in-out;
+      padding: 20px;
+    }
+
+    .bottom-list.show {
+      bottom: 0; 
+    }
+
+    .bottom-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bottom-list li {
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .bottom-list li:last-child {
+      border-bottom: none;
+    }
+
+  .division {
   position: fixed;
-  bottom: -100%; /* hidden initially 
+  bottom: 0;
   left: 0;
   width: 100%;
-  background: #fff;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
-  transition: bottom 0.4s ease;
-  padding: 20px;
+  transform: translateY(100%);   /* start hidden (below screen) */
+  transition: transform 0.3s ease-in-out;
+  background: white;
+  z-index: 1000;
 }
 
-/* 
-.bottom-sheet.active {
-  bottom: 0;
-}*/
-
-/* List style */
-/* .bottom-sheet ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.division.show {
+  transform: translateY(0);      /* slide up */
 }
-
-.bottom-sheet ul li {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.bottom-sheet ul li:hover { 
-  background: #f2f2f2;
-} */
-
-
-
-
-
-/* .bottom-sheet ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.bottom-sheet ul li {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.bottom-sheet ul li:hover { 
-  background: #f2f2f2;
-} */
