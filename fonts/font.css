@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'bold';
-  src: url(/fonts/Inter-Bold.woff2);
-  font-weight:bold;
+  src: url(/fonts/Inter-Bolwoff2);
+  
 }
 @font-face {
   font-family: 'regular';
-  src: url(/fonts/Inter-Regular.woff2);
-  font-weight:normal;
+  src: url(/fonts/Inter-Regularwoff2);
+  
 }
 @font-face {
   font-family:'semibold';

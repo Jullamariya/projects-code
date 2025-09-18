@@ -5,13 +5,8 @@ function toggleList() {
 
 
 
-function toggler() {
-  const panel = document.getElementById("bottomList");
-  panel.classList.toggle("show");
-}
-
-function buttonlist(){
-  const button = document.getElementById("#division");
-  panel.classList.toggle("show")
-
-}
+// const menuItems ={
+//   name:"Mi",
+//   name:"Realme",
+//   name:"samsung"
+// }
