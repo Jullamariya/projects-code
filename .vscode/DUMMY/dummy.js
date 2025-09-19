@@ -55,71 +55,71 @@
 
 //*************************************************** */
 
-function fruitsName(){
-  fetch("./fruits.json")
-  .then(response => response.json())
-  .then(data =>{
+// function fruitsName(){
+//   fetch("./fruits.json")
+//   .then(response => response.json())
+//   .then(data =>{
 
-    const fruitContainer = document.getElementById("fruits-name");
-    const vegContainer = document.getElementById("vegetables-name");
-    const foodContainer = document.getElementById("food-name");
+//     const fruitContainer = document.getElementById("fruits-name");
+//     const vegContainer = document.getElementById("vegetables-name");
+//     const foodContainer = document.getElementById("food-name");
 
-    data.fruits.forEach(item=>{
-      const div = document.createElement("div");
-      div.classList.add("names");
-      div.innerHTML = `<div>${item.fruit}</div>`;
-      fruitContainer.appendChild(div);
-    });
+//     data.fruits.forEach(item=>{
+//       const div = document.createElement("div");
+//       div.classList.add("names");
+//       div.innerHTML = `<div>${item.fruit}</div>`;
+//       fruitContainer.appendChild(div);
+//     });
     
-    data.vegetables.forEach(item=>{
-      const div = document.createElement("div");
-      div.classList.add("names");
-      div.innerHTML = `<div>${item.vegetable}</div>`;
-      vegContainer.appendChild(div);
-    });
+//     data.vegetables.forEach(item=>{
+//       const div = document.createElement("div");
+//       div.classList.add("names");
+//       div.innerHTML = `<div>${item.vegetable}</div>`;
+//       vegContainer.appendChild(div);
+//     });
 
-    data.foods.forEach(item=>{
-      const div = document.createElement("div");
-      div.classList.add("names");
-      div.innerHTML = `<div>${item.food}</div>`;
-      foodContainer.appendChild(div);
-    });
-  })
-  .catch (error => console.error("Error loading JSON",error));
+//     data.foods.forEach(item=>{
+//       const div = document.createElement("div");
+//       div.classList.add("names");
+//       div.innerHTML = `<div>${item.food}</div>`;
+//       foodContainer.appendChild(div);
+//     });
+//   })
+//   .catch (error => console.error("Error loading JSON",error));
 
-}
-fruitsName();
+// }
+// fruitsName();
 
 //**************************************************** 
 
-function userName(){
-  fetch("./dummy.json")
-  .then(response => response.json())
-  .then(data => {
-    const UsersContainer = document.getElementById("username");
+// function userName(){
+//   fetch("./dummy.json")
+//   .then(response => response.json())
+//   .then(data => {
+//     const UsersContainer = document.getElementById("username");
 
-    data.username.forEach(item =>{
-      const div = document.createElement("div");
-      div.classList.add("names");
-      div.innerHTML = `<div>${item.name}</div>`
-      UsersContainer.appendChild(div);
-    });
-    data.username.forEach(item =>{
-      const div = document.createElement("div");
-      div.classList.add("names");
-      div.innerHTML = `<div>${item.age}</div>`
-      UsersContainer.appendChild(div);
-    });
-    data.username.forEach(item =>{
-      const div = document.createElement("div");
-      div.classList.add("names");
-      div.innerHTML = `<div>${item.place}</div>`
-      UsersContainer.appendChild(div);
-    });
-  })
-  .catch(error => console.error("Error loading JSON",error));
-}
-userName();
+//     data.username.forEach(item =>{
+//       const div = document.createElement("div");
+//       div.classList.add("names");
+//       div.innerHTML = `<div>${item.name}</div>`
+//       UsersContainer.appendChild(div);
+//     });
+//     data.username.forEach(item =>{
+//       const div = document.createElement("div");
+//       div.classList.add("names");
+//       div.innerHTML = `<div>${item.age}</div>`
+//       UsersContainer.appendChild(div);
+//     });
+//     data.username.forEach(item =>{
+//       const div = document.createElement("div");
+//       div.classList.add("names");
+//       div.innerHTML = `<div>${item.place}</div>`
+//       UsersContainer.appendChild(div);
+//     });
+//   })
+//   .catch(error => console.error("Error loading JSON",error));
+// }
+// userName();
 
 //********************************************************
 
@@ -157,20 +157,97 @@ userName();
 
 /*********************************************************** */
 
-const menuItems =[
-  {name:"Mi"},
-  {name:"Realme"},
- {name:"samsung"}
-]
+// const menuItems =[
+//   {item:"Mobiles"},
+//   {name:"Mi"},
+//   {name:"Realme"},
+//   {name:"samsung"},
+//   {name:"Infinix"},
+//   {name:"OPPPO"},
+//   {name:"Apple"},
+//   {name:"Vivo"},
+//   {name:"Honor"},
+//   {name:"Asus"},
+//   {name:"Poco X2"},
+//   {name:"realme Narzo 10"},
+//   {name:"Infix Hot 9"},
+//   {name:"IQOO 3"},
+//   {name:""}
+// ];
+const menuItems = [
+  // Mobiles
+  { name: "Mobiles", type: "category" },
+  { name: "Mi" },
+  { name: "Realme" },
+  { name: "Samsung" },
+  { name: "Infinix" },
+  { name: "OPPO" },
+  { name: "Apple" },
+
+  // Mobile Accessories
+  { name: "Mobile Accessories", type: "category" },
+  { name: "Mobile Cases" },
+  { name: "Headphones & Headsets" },
+  { name: "Power Banks" },
+  { name: "Screenguards" },
+  { name: "Memory Cards" },
+
+  // Laptops
+  { name: "Laptops", type: "category" },
+  { name: "Gaming Laptops" },
+  { name: "Desktop PCs" },
+  { name: "External Hard Disks" },
+  { name: "Pendrives" },
+  { name: "Laptop Bags" },
+  { name: "Mouse" }
+];
+
 let menuHTML = "";
-menufunction.forEach((menu)=>{
-  menuHTML = menuHTML + 
-  `<div class="wZsanD">
-              <a title="Mobiles" class="cNDIdi CP4tVY">Mobiles</a>
-              <a title="${menu.name}" class="jBYtJt">${menu.name}</a>
-              <a title="${menu.name}}" class="jBYtJt">${menu.name}</a>
-              <a title="${menu.name}" class="jBYtJt">${menu.name}</a>
-            </div>
-  `;
+
+menuItems.forEach(menu => {
+  if (menu.type === "category") {
+    menuHTML += `<a class="jBYtJt category">${menu.name}</a>`;
+  } else {
+    menuHTML += `<a class="jBYtJt">${menu.name}</a>`;
+  }
 });
- document.querySelector("#js-dropdown-Menu").innerHTML = menuHTML;
+
+document.getElementById("js-dropdown-Menu").innerHTML = menuHTML;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let menuHTML = "";
+// menuItems.forEach((menu)=>{
+//   menuHTML += 
+//   `<div class="wZsanD">`;
+
+//   if (menu.item) {
+//     menuHTML += `<a title="${menu.item}" class="cNDIdi CP4tVY">${menu.item}</a>`;
+//   }
+//   if (menu.name) {
+//     menuHTML += `<a title="${menu.name}" class="jBYtJt">${menu.name}</a>`;
+//   }
+
+//   menuHTML += `</div>`;
+//   ;
+// });
+//  document.querySelector("#js-dropdown-Menu").innerHTML = menuHTML;
+
+
+
+
+

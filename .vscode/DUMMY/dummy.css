@@ -1,0 +1,5 @@
+#js-dropdown-Menu a.category {
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px; /* little space before each new category */
+}
