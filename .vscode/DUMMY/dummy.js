@@ -157,23 +157,7 @@
 
 /*********************************************************** */
 
-// const menuItems =[
-//   {item:"Mobiles"},
-//   {name:"Mi"},
-//   {name:"Realme"},
-//   {name:"samsung"},
-//   {name:"Infinix"},
-//   {name:"OPPPO"},
-//   {name:"Apple"},
-//   {name:"Vivo"},
-//   {name:"Honor"},
-//   {name:"Asus"},
-//   {name:"Poco X2"},
-//   {name:"realme Narzo 10"},
-//   {name:"Infix Hot 9"},
-//   {name:"IQOO 3"},
-//   {name:""}
-// ];
+
 const menuItems = [
   // Mobiles
   { name: "Mobiles", type: "category" },
@@ -217,10 +201,39 @@ document.getElementById("js-dropdown-Menu").innerHTML = menuHTML;
 
 
 
-
-
-
-
+// function Itemenu() {
+//   fetch("./dummy.json")
+//     .then(response => response.json())
+//     .then(data => {
+//       const menuContainer = document.getElementById("js-dropdown-Menu"); // match HTML ID
+//       data.menuItems.forEach(item => {
+//         const div = document.createElement("div");
+//         div.classList.add("wZsanD");
+//         div.innerHTML = `
+//           <div class="wZsanD">
+//             <a title="${item.mobile}" class="cNDIdi CP4tVY ">${item.mobile}</a>
+//             <a title="${item.Mi}" class="jBYtJt">${item.Mi}</a>
+//             <a title="${item.Realme}" class="jBYtJt">${item.Realme}</a>
+//             <a title="${item.Samsung}" class="jBYtJt">${item.Samsung}</a>
+//             <a title="${item.Infinix}" class="jBYtJt">${item.Infinix}</a>
+//             <a title="${item.OPPO}" class="jBYtJt">${item.OPPO}</a>
+//             <a title="${item.Apple}" class="jBYtJt">${item.Apple}</a>
+//             <a title="${item.Vivo}" class="jBYtJt">${item.Vivo}</a>
+//             <a title="${item.Honor}" class="jBYtJt">${item.Honor}</a>
+//             <a title="${item.Asus}" class="jBYtJt">${item.Asus}</a>
+//             <a title="${item.Poco}" class="jBYtJt">${item.Poco}</a>
+//             <a title="${item.realme}" class="jBYtJt">${item.realme}</a>
+//             <a title="${item.InfinixHot}" class="jBYtJt">${item.InfinixHot}</a>
+//             <a title="${item.IQOO}" class="jBYtJt">${item.IQOO}</a>
+//             <a title="${item.Motorola}" class="jBYtJt">${item.Motorola}</a>
+//             <a title="${item.realmeNarzo}" class="jBYtJt">${item.realmeNarzo}</a>
+//             <a title="${item.Motorolapowerlite}" class="jBYtJt">${item.Motorolapowerlite}</a>
+//           </div>
+//         `;
+//         menuContainer.appendChild(div);
+//       });
+//     });
+// }
 
 
 

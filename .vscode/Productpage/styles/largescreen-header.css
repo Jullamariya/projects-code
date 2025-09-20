@@ -249,6 +249,7 @@ body{
     background-color: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16);
     height:40px;
+    position:relative;
 }
 span.category{
   display:flex;
@@ -286,7 +287,7 @@ a.category:hover{
 
 /*****************************************************/
 #js-dropdown-Menu {
-  /* display: none;  */
+  display: none; 
   position: absolute;
   top: 100%;
   left: 0;
@@ -499,28 +500,7 @@ a.category:hover{
   font-weight:500;
    text-decoration: none;
 }
-.section-3{
-    padding: 16px;
-    border-bottom: 1px solid #f0f0f0;
-}
-.division-10{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.division-11{
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .3px;
-    display: inline-block;
-}
-.ukzDZP{
-  display: inline-block;
-  cursor: pointer;
-  width: 6px;
-  height: 11px;
-  transform: rotate(-90deg);
-}
+
 .section-4{
     padding: 16px;
     border-bottom: 1px solid #f0f0f0;
