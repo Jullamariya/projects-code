@@ -132,3 +132,7 @@ document.querySelector(".section-3").addEventListener("click", function togglewo
   const dropdown = document.querySelector(".network-division1");
   dropdown.classList.toggle("active");
 });
+
+
+
+
