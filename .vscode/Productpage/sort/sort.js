@@ -100,6 +100,51 @@ function toggleList() {
 //   })
 // }
 
+
+
+
+
+
+
+
+const selectitem = [
+  {selected: "2G" },
+  {selected:"3G"}
+  ];
+
+function selectedItem() {
+  const dropdown = document.getElementById("select-division-1");
+
+  if (!dropdown.innerHTML) {
+    // Build HTML from the array
+    let html = "";
+    selectitem.forEach((item) => {
+      html += `
+          <div class="select-division-2">
+            <div class="select-division-3">
+              <div class="select-division-4">✕</div>
+              <div class="select-division-5" id="selected-items">
+                <div id="dropdown-options">
+                  <div class="option" onclick="selectedItem('${item.selected}')">${item.selected}</div>
+                </div>
+              </div>
+            </div>
+         </div>
+      `;
+    });
+
+    dropdown.innerHTML = html;
+    dropdown.style.display = "block";
+  } else {
+    dropdown.innerHTML = "";
+    dropdown.style.display = "none";
+  }
+}
+
+
+
+
+// NETWORK
 const range = [
   { range: "2G" },
   { range: "3G" },
@@ -110,28 +155,92 @@ const range = [
 ];
 
 let networkHTML = "";
-
 range.forEach((item) => {
   networkHTML += `
-    <div class="network-divisonmain" title="${item.range}">
-      <div class="network-division3">
-        <label class="network-division4">
-          <input type="checkbox" class="network-input1" readonly="">
-          <div class="network-division5"></div>
-          <div class="newtwork-divsion6">${item.range}</div>
-        </label>
-      </div>
-    </div>
+     <div class="network-division2">
+        <div class="network-divisonmain" title="${item.range}">
+          <div class="network-division3">
+            <label class="network-division4">
+              <input type="checkbox" class="network-input1">
+              <div class="network-division5"></div>
+              <div class="newtwork-divsion6">${item.range}</div>
+            </label>
+          </div> 
+        </div>
+     </div> 
   `;
 });
 
-// use class selector if HTML has class
 document.querySelector(".network-division1").innerHTML = networkHTML;
 
-document.querySelector(".section-3").addEventListener("click", function togglework() {
-  const dropdown = document.querySelector(".network-division1");
-  dropdown.classList.toggle("active");
+document.querySelector(".section-3").addEventListener("click", function () {
+  document.querySelector(".network-division1").classList.toggle("active");
 });
+
+const brand = [
+  { brandName: "Apple" },
+  { brandName: "Google" },
+  { brandName: "MOTOROLA" },
+  { brandName: "vivo" },
+  { brandName: "OPPO" },
+  { brandName: "Infinix" }
+];
+
+let brandHTML = "";
+brand.forEach((item) => {
+  brandHTML += `
+     
+        <div class="brandname-division1" title="${item.brandName}">
+          <div class="brandname-division2">
+            <label class="brandname-label">
+              <input type="checkbox" class="brandname-division3">
+              <div class="brandname-division4"></div>
+              <div class="brand-name">${item.brandName}</div>
+            </label>
+          </div>
+        </div>
+      
+  `;
+});
+
+document.querySelector("#brand-division1").innerHTML = brandHTML;
+
+document.querySelector("#brand-section-4").addEventListener("click", function () {
+  document.querySelector("#brand-division1").classList.toggle("active");
+});
+
+
+
+// const ram = [
+// {ram:"4GB"},
+// {ram:"3GB"},
+// {ram : "2 GB"},
+// {ram :"1GB & Below"},
+// {ram:"8GB  and Above"},
+// {ram : "6GB"},
+// {ram : "6GB Above"}
+// ];
+// let ramHTML = "";
+//  ram.forEach((item)=>{
+//   ramHTML +=
+// `  <div class="network-division2">
+//             <div class="network-divisonmain" title="${item.ram}">
+//                <div class="network-division3">
+//                 <label class="network-division4">
+//                 <input type="checkbox" class="network-input1" readonly="">
+//                 <div class="network-division5"></div>
+//                 <div class="newtwork-divsion6">${item.ram}</div>
+//               </label>
+//             </div> 
+//           </div>
+//         </div>` ;
+//       });
+//     document.querySelector(".ram-division1").innerHTML = ramHTML;
+// document.querySelector(".section-4").addEventListener("click",function togglework (){
+//   const ramdrop = document.querySelector(".ram-division1");
+//   ramdrop.classList.toggle("active");
+// });
+
 
 
 
