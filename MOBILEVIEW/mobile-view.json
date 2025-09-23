@@ -1,0 +1,89 @@
+{
+  "products":[{
+      "id":"1",
+      "image":"flipkartimage/mobileimages/poco.jpeg",
+      "name":"REDMI Note 14SE 5G (Mystique White,128GB)",
+      "rating":{
+        "stars":"4.2",
+        "count":"2,333"
+      },
+      "discount":"25",
+      "priceCross":"19,999",
+      "priceCents":"14,999",
+      "bankoffer":"14,249",
+      "upto":"10,300",
+      "warranty":"1",
+      "offered":"REDMI",
+      "ram":"6",
+      "storage":"128",
+      "hieght":"16.94",
+      "inch":"6.67"
+  },
+  { "id":"2",
+      "image":"flipkartimage/mobileimages/realmemobile-product02.jpeg",
+      "name":"IQOO Z10X 5G (Ultramarine,128GB)",
+      "rating":{
+        "stars":"4.2",
+        "count":"3,040"
+      },
+      "discount":"21",
+      "priceCross":"17,499",
+      "priceCents":"13,684",
+      "bankoffer":"12,999",
+      "left":"1",
+      "offered":"IQOO",
+      "ram":"6",
+      "storage":"128",
+      "hieght":"16.94",
+      "inch":"6.67",
+      "mAh":"5110",
+      "camera":"20"
+  },
+  {
+       "id":"3",
+      "image":"flipkartimage/mobileimages/redmi.webp",
+      "name":"REDMI Note 14SE 5G (Mystique White,128GB)",
+      "rating":{
+        "stars":"4.2",
+        "count":"2,333"
+      },
+      "discount":"25",
+      "priceCross":"19,999",
+      "priceCents":"14,999",
+      "bankoffer":"14,249",
+      "upto":"10,300",
+      "warranty":"1",
+      "offered":"POCO",
+      "ram":"8",
+      "storage":"132",
+      "hieght":"16.00",
+      "inch":"6.92",
+      "mAh":"8000",
+      "camera":"50"
+  },
+
+  {
+       "id":"4",
+      "image":"flipkartimage/mobileimages/vivoimage.jpeg",
+      "name":"REDMI Note 14SE 5G (Titan Black,128GB)",
+      "rating":{
+        "stars":"4.2",
+        "count":"2,333"
+      },
+      "discount":"25",
+      "priceCross":"19,999",
+      "priceCents":"14,999",
+      "bankoffer":"14,249",
+      "upto":"10,300",
+      "warranty":"1",
+      "offered":"REDMI",
+      "ram":"6",
+      "storage":"128",
+      "hieght":"16.94",
+      "inch":"6.67",
+      "mAh":"8500",
+      "camera":"80"
+  }
+]
+}
+

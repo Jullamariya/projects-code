@@ -1,0 +1,107 @@
+
+.section-main-3{
+  padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.section-3{
+    margin:-16px;
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.section-3:active{
+   background-color:rgb(204, 245, 245); 
+}
+.division-10{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.division-11{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    display: inline-block;
+}
+.ukzDZP{
+  display: inline-block;
+  cursor: pointer;
+  width: 6px;
+  height: 11px;
+  transform: rotate(270deg);
+}
+#division-network svg path{
+   transition: transform 0.3s ease, fill 0.3s ease;
+     stroke-width:2;
+}
+ #division-network:active svg {
+    transform: rotate(90deg);
+ 
+  }
+
+  .network-division1{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .network-division1 {
+  display: none; 
+}
+
+.network-division1.active {
+  display: block; 
+}
+
+  .network-division2{
+    margin:7px 0px;
+  }
+  .network-divisonmain{
+    padding:3px 0px;
+    display:inline;
+  }
+  .network-division3{
+    width: 100%;
+  }
+  .network-division4{
+    padding: 3px 0;
+    cursor: pointer;
+    width: 100%;
+    /* position: relative; */
+    display: block;
+  }
+  .network-input1{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:0px;
+    margin:0px;
+  }
+  .network-division5{
+     position:relative;
+     width:14px;
+     height:14px;
+     background-color: transparent;
+     border: 1.5px solid #c2c2c2;
+             border-radius: 1.5px;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+  .newtwork-divsion6{
+    vertical-align: middle;
+    font-size:14px;
+    padding-left:11px;
+    color:#212121;
+    display:inline-block;
+    width:85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+    cursor: pointer;
+}
+
+
+  

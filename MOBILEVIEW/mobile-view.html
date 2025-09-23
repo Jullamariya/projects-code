@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <link rel="stylesheet" href="styles/mobile-view-header.css" />
+     <link rel="stylesheet" href="styles/sort.css">
+
+    <!-- <link href=".vscode/Productpage/styles/Inter-Bold.woff2" rel="stylesheet" /> -->
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MobileView</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-mobile-main-view">
+
+        <div class="left-mobile-view">
+          <a href="" class="black-arrow-anchor">
+            <img
+              class="black-arrow-image"
+              src="flipkartimage/blackarrowleft.svg"
+            />
+          </a>
+          <a href="" class="flip-round-logo">
+            <img
+              class="flip-roundlogo-image"
+              src="flipkartimage/flipmobilelogo.png"
+            />
+          </a>
+        </div>
+      
+
+      <div class="middle-mobile-view">
+        <span class="input-middle-division">
+          mobiles
+        </span>
+      </div>
+
+      <div class="right-mobile-view">
+        <a href="" class="search-mobile-view">
+          <img
+            class="searchlogo-mobile-view"
+            src="flipkartimage/search black.svg"
+          />
+        </a>
+        <div class="cart-division">
+          <a href="" class="bascket-mobile-view">
+            <img class="bascket-mobile-image" src="flipkartimage/bascket.svg" />
+          </a>
+        </div>
+
+          <div class="login-division">
+            <span class="login-text">Login</span>
+          </div>
+      </div>
+
+    </div>
+    </header>
+
+
+    <div class="top-section-two">
+        <div class="sort-mobile-view js-sort-mobile-view"     onclick="toggleList()">
+            <img class="sort-mobile-image" src="flipkartimage/sortimage.svg" />
+            <span class="sort-span">Sort</span>
+        </div>
+      <div class="sort-filter-division"></div>
+
+      <div class="sort-mobile-view">
+        <img class="sort-mobile-image" src="flipkartimage/filterimage.svg" />
+        <span class="sort-span">Filter</span>
+      </div>
+    </div>
+
+    <div class="top-section-three">
+      <div class="section-three-division">
+        <div class="mobile-range-division">
+          <img
+            class="price-dollar-image"
+            src="flipkartimage/triangleimage.png"
+          />
+          <span class="range-span">5G</span>
+        </div>
+      </div>
+
+      <div class="section-three-division">
+        <div class="dollar-range-division">
+          <img class="price-dollar-image" src="flipkartimage/dollarimage.png" />
+          <span class="range-span">Rs.15000-Rs.20000</span>
+        </div>
+      </div>
+
+      <div class="section-three-division">
+        <div class="dollar-range-division">
+          <img class="price-dollar-image" src="flipkartimage/dollarblue.png" />
+          <span class="range-span">New Launches </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-four">
+      <img
+        class="landscape-image"
+        src="flipkartimage/landscape-imagetwo.webp"
+      />
+    </div>
+
+    <div class="container-plus js-container-plus">
+      <div class="container-two js-container-two">
+        
+
+<!-- ***********************************************************************-->
+  <div id="section"></div> 
+  <!-- ********************************************************* -->
+            <div class="sort-toggler-one" id="bottom-list">
+
+              <div class="sort-toggler-two">SORT BY</div>
+                <div class="sort-toggler-three"></div> 
+
+                <div class="sort-toggler-section">
+
+                  <div class="sort-toggler-four">
+                    <div class="sort-toggler-five">
+                      <div class="sort-toggler-relevance">
+                        Relevance
+                      </div>
+                    </div>
+                    <div class="sort-division-six">
+                    <label class="custom-radio"><input type="radio" name="option" value="1">
+                    <span class="radio-btn"></span></label>
+                    </div>
+                  </div>
+
+                 <div class="sort-toggler-four">
+                    <div class="sort-toggler-five">
+                      <div class="sort-toggler-relevance">
+                      Porpularity
+                      </div>
+                    </div>
+                    <div class="sort-division-six">
+                      <label class="custom-radio"><input type="radio" name="option" value="2">
+                      <span class="radio-btn"></span> </label>
+                    </div>
+                  </div>
+
+                  <div class="sort-toggler-four">
+                    <div class="sort-toggler-five">
+                      <div class="sort-toggler-relevance">
+                      Price -- Low to High
+                      </div>
+                    </div>
+                    <div class="sort-division-six">
+                      <label class="custom-radio"><input type="radio" name="option" value="3">
+                      <span class="radio-btn"></span> </label>
+                    </div>
+                  </div>
+
+                  <div class="sort-toggler-four">
+                    <div class="sort-toggler-five">
+                      <div class="sort-toggler-relevance">
+                        Price -- High to Low
+                      </div>
+                    </div>
+                      <div class="sort-division-six">
+                        <label class="custom-radio"><input type="radio" name="option" value="4">
+                        <span class="radio-btn"></span> </label>
+                    </div>
+                  </div>
+
+                  <div class="sort-toggler-four">
+                    <div class="sort-toggler-five">
+                      <div class="sort-toggler-relevance">
+                        Newest First
+                      </div>
+                    </div>
+                    <div class="sort-division-six">
+                      <label class="custom-radio"><input type="radio" name="option" value="5"> 
+                      <span class="radio-btn"></span></label>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+      
+        
+     <script src="scripts/mobile-view-sort.js"></script>
+     <script src="scripts/mobile-view.js"></script>
+     <script>
+      window.addEventListener('load',function(){
+        const width = winddow.innerWidth;
+
+        if(width <= 768){
+          window.location.href = "mobile-view.html";
+        }
+        else{
+          window.location.href = "largescreen.html";
+        }
+      })
+     </script>
+  </body>
+</html>

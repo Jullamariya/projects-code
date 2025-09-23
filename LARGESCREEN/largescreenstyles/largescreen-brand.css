@@ -1,0 +1,116 @@
+.section-main-4{
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.section-4{
+    margin:-16px;
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.section-4:active{
+   background-color:rgb(204, 245, 245); 
+}
+.division-13{
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  display: inline-block;
+}
+.brand-arrow{
+  display: inline-block;
+  cursor: pointer;
+  width: 6px;
+  height: 11px;
+  transform: rotate(270deg);
+}
+.division-10 svg path{
+   transition: transform 0.3s ease, fill 0.3s ease;
+     stroke-width:2;
+}
+ .division-10:active svg{
+    transform: rotate(90deg);
+  }
+  .brand-division-1{
+   box-sizing:border-box;
+   margin:0px;
+   padding:0px;
+  }
+ #brand-division1 {
+  display: none; 
+}
+
+#brand-division1.active {
+  display: block; 
+}
+  .brand-division-2{
+    margin-bottom:7px;
+
+  }
+  .brand-svg{
+    width: 12px;
+    height: 20px;
+    position: absolute;
+  }
+  .brand-Search{
+    width:100%;
+    border-width:0 0 2px;
+    border-color:#c2c2c2;
+    height:20px;
+    font-size:14px;
+    padding:0 0 0 21px;
+    color:#878787;
+    outline:none;
+  }
+  .brandname-division1{
+   padding:3px 0;
+  }
+  .brandname-division2{
+   width:100%;
+  }
+  .brandname-label{
+    padding:3px ;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  .brandname-division3{
+    visibility:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .brandname-division4{
+    position:relative;
+    width:14px;
+    height:14px;
+    background-color:transparent;
+    border:1.4px solid #c2c2c2;
+    border-radius:1.5px;
+    box-sizing:border-box;
+    display:inline-block;
+    vertical-align: middle;
+    cursor:pointer;
+  }
+  .brand-name{
+     vertical-align:middle;
+     font-size:14px;
+     padding-left:11px;
+     color:#212121;
+     display:inline-block;
+     width:72%;
+  }
+  .count-more{
+    font-size:12px;
+    font-weight:600;
+    color:#2874f0;
+    text-transform:uppercase;
+    cursor:pointer;
+    margin-top:9px;
+  }
+  .count-span{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+  }

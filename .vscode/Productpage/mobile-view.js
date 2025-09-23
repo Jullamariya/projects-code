@@ -168,6 +168,3 @@ function showImage(container){
     isClicked = false;
   }
 }
-
-
-
