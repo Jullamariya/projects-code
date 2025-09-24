@@ -54,10 +54,11 @@ function productfunction() {
                 <div class="warranty-division">
                   <span class="warranty-span">${products.warranty || ""} year warranty by ${products.offered || ""}</span>
                 </div>
-              </div>
-              <div class="wishlist-division">
+                <div class="wishlist-division">
                 <img class="wishlist-image js-wishlist-image" src="flipkartimage/whishlistheart.svg" />
               </div>
+              </div>
+              
             </div>
           </div>
 
